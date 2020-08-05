@@ -5,6 +5,9 @@ feign:
   hystrix:
     enabled: true
 spring:
+  profiles: dev
+  application:
+    name: springcloud-config-dept-feign
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
